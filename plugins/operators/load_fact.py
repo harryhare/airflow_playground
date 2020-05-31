@@ -13,7 +13,7 @@ class LoadFactOperator(BaseOperator):
                  redshift_conn_id="",
                  table="",
                  sql="",
-                 append=True,
+                 append=False,
                  *args, **kwargs):
 
         super(LoadFactOperator, self).__init__(*args, **kwargs)
