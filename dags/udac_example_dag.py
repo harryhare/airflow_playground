@@ -10,10 +10,13 @@ from dateutil.parser import parse
 
 
 default_args = {
-    'owner': 'udacity',
+    'owner': 'mayue',
     'start_date': datetime(2018, 11, 1,0,0,0),
     'end_date': datetime(2018, 11, 1,0,0,0),
-    #'end_date': datetime(2018, 11, 30,23,0,0),
+    'depends_on_past': False,
+    'retries': 3,
+    'retry_delay': timedelta(minutes=5),
+    'catchup': False    
 }
 
 dag = DAG('udac_example_dag',
