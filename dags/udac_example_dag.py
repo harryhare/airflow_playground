@@ -12,7 +12,7 @@ from dateutil.parser import parse
 default_args = {
     'owner': 'mayue',
     'start_date': datetime(2018, 11, 1,0,0,0),
-    'end_date': datetime(2018, 11, 1,0,0,0),
+    #'end_date': datetime(2018, 11, 1,0,0,0),
     'depends_on_past': False,
     'retries': 3,
     'retry_delay': timedelta(minutes=5),
@@ -53,7 +53,7 @@ stage_songs_to_redshift = StageToRedshiftOperator(
     redshift_conn_id="redshift",
     aws_credentials_id="aws_credentials",
     s3_bucket="udacity-dend",
-    s3_key="song_data/A/A/B/",
+    s3_key="song_data/",
     json="auto"
 )
 
