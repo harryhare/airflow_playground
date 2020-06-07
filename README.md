@@ -7,4 +7,4 @@
 
 udacity data engineering nano degree program 的 repo ：
 
-https://github.com/harryhare/udacity_data_engineer
+https://github.com/harryhare/udacity_data_engineering
